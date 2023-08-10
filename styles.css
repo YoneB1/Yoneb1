@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1cee7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  a{
+    padding:0;
+  }
+  .wrapper{
+    width: 100%;
+
+  }
+  .game-container {
+    width: 100%; /* Đảm bảo box rộng ra hết khung container */
+    max-width: 800px; /* Giới hạn chiều rộng tối đa của box */
+    margin: 0 auto; /* Căn giữa theo chiều ngang */
+  }
+  #box{
+    background-color: #a7a7a7;
+    padding:0px;
+  }
+  
+  .word-options {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .word-option{
+    background-color: #f15c5c;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .word-option.selected {
+    display: none; /* Ẩn các từ đã chọn */
+  }
+  
+  .hidden-word {
+    background-color: #87ceeb; /* Màu nền cho từ đã ẩn */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  /* .word-option.chosen {
+    background-color: #f0ad4e;
+    opacity: 0.6; 
+    pointer-events: none;
+  } */
+  
+  #result {
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+  }
+  
+  #score {
+    margin-top: 10px;
+  }
+
+/* ... CSS trước đó ... */
+
+.sentence {
+   display: none;
+  }
+  
+ 
+  
+  .result {
+    font-weight: bold;
+  }
+  
+  .score {
+    font-weight: bold;
+  }
+  
+  /* ... CSS sau đó ... */
+  
+  @media (max-width: 767px) {
+    .game-container {
+      width: 100%;
+    }
+  }
+  
+  
+  .word-option.chosen {
+     opacity: 0.5; /* Làm mờ từ đã chọn */
+    pointer-events: none; 
+  } 
+  .selected-word-btn {
+    margin: 5px;
+  }
+  
+  /* Thiết lập một font chữ mặc định cho toàn bộ trang */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tạo phần trên cùng của trang như tiêu đề */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* nav */
+nav {
+  background-color: #444;
+  display: grid;
+  place-items: center; /* Căn giữa cả chiều ngang và dọc */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0;
+  
+}
+h3{
+  font-size: 16px;
+  margin-bottom: 0px;
+  margin-left:5px;
+}
+
+
+/* Định dạng container hiển thị điểm cao nhất */
+.high-score-container {
+  color: #fff;
+  border-radius: 5px;
+}
+
+
+nav ul li a {
+ 
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
